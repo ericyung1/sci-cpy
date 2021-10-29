@@ -3,7 +3,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 import pandas as pd
 
-df = pd.read_excel('Excel.xlsx',
+df = pd.read_excel('Excel Spreadsheet.xlsx',
 converters = {'First Name':str, 'Last Name':str, 'Birthdate':str, 'Email':str, 'Phone':str, 'Zip Code':int})
 
 for index, row in df.head(n = 100).iterrows():
